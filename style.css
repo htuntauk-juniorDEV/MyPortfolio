@@ -1,0 +1,164 @@
+/* Consistent sizing */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f1f5f9;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 6%;
+    background-color: white;
+}
+
+.logo {
+    color: #1d4ed8;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: #334155;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+.hero {
+    background-color: white;
+    padding: 48px 32px;
+    border-radius: 16px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 8px 0 16px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Reusable button style */
+.primary-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Skill badges */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: white;
+    padding: 10px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+/* Project cards */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.btn-mail{
+    text-decoration: none; 
+    color: white;
+    padding: 8px;
+    background-color: #2563eb;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #64748b;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 32px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
